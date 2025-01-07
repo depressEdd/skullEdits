@@ -43,7 +43,6 @@ counters.forEach((counter) => {
   counterObserver.observe(counter);
 });
 
-
 // Animation icons function
 const iconObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -60,3 +59,12 @@ const iconElements = document.querySelectorAll(".icon");
 iconElements.forEach((icon) => {
   iconObserver.observe(icon);
 });
+
+////// Hamburger menu
+
+document.querySelector(".menu-toggle").addEventListener("click", () => {
+  const navLinks = document.querySelector(".nav-links");
+  navLinks.classList.toggle("active");
+});
+
+
