@@ -365,15 +365,6 @@
         text-align: center;
     }
 
-    @media (max-width: 768px) {
-        .separator {
-            background-attachment: scroll;
-            background-image: url('images/timeline-mobile.jpg');
-            background-size: cover;
-            background-position: center center;
-        }
-    }
-
     .separator::before {
         content: '';
         position: absolute;
@@ -958,5 +949,33 @@
 
         .column p {
             font-size: 1rem;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .separator {
+            background-image: url('images/timeline-mobile.jpg');
+            background-attachment: unset;
+            background-size: cover;
+            background-position: center center;
+
+        }
+
+        .separator::before {
+            display: none;
+        }
+
+        .content-wrapper {
+            padding: 10px;
+        }
+
+        .left-separator h1 {
+            font-size: calc(10px + 5vw);
+        }
+
+        .button {
+            padding: calc(2vw + 6px) calc(4vw + 20px);
+            font-size: calc(2vw + 1rem);
         }
     }
