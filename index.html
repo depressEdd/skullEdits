@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Skull Edits</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
@@ -12,9 +13,10 @@
 <body>
     <div class="hero">
         <div class="video-background">
-            <video autoplay muted loop preload="auto">
-                <source src="videos/hero-bg.webm" type="video/mp4">
-                Tu navegador no soporta videos.
+            <video autoplay muted loop playsinline preload="auto">
+                <source src="videos/hero-bg.mp4" type="video/mp4">
+                <source src="videos/hero-bg.webm" type="video/webm">
+                Your browser does not support the video tag.
             </video>
             <div class="overlay-content">
                 <h1>Where you look,</h1>
@@ -169,8 +171,8 @@
 
     <footer class="footer">
         <div class="footer-container">
-            <div class="footer-column logo-column">
-                <img src="/images/logo.png" alt="Logo" class="logo">
+            <div class="footer-column logo-acolumn">
+                <img src="images/logo.png" alt="Logo" class="logo">
             </div>
 
             <div class="footer-column newsletter-column">
@@ -208,17 +210,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
-
-
-
-
-
-
-
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
 

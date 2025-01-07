@@ -355,6 +355,7 @@
         align-items: center;
         width: 100%;
         height: 100vh;
+        min-height: 500px;
         position: relative;
         background-image: url('images/timeline-optimized.jpg');
         background-size: cover;
@@ -372,6 +373,7 @@
         width: 100%;
         height: 100%;
         backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
         background: rgba(0, 0, 0, 0.5);
     }
 
