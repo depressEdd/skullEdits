@@ -365,14 +365,7 @@
         text-align: center;
     }
 
-    @media (max-width: 768px) {
-        .separator {
-            background-attachment: scroll;
-            background-image: url('images/timeline-mobile.jpg');
-            background-size: cover;
-            background-position: center center;
-        }
-    }
+
 
     .separator::before {
         content: '';
@@ -432,6 +425,16 @@
     @media (prefers-reduced-motion) {
         .button {
             transition: none;
+        }
+    }
+
+
+    @media (max-width: 768px) {
+        .separator {
+            background-attachment: scroll;
+            background-image: url('iimages/timeline-optimized.jpg');
+            background-size: cover;
+            background-position: center center;
         }
     }
 
