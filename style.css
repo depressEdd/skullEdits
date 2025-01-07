@@ -952,13 +952,14 @@
         }
     }
 
+
     @media (max-width: 768px) {
         .separator {
             background-image: url('images/timeline-mobile.jpg');
-            background-size: contain;
+            background-attachment: unset;
+            background-size: cover;
             background-position: center center;
-            background-repeat: no-repeat;
-            height: auto;
+
         }
 
         .separator::before {
