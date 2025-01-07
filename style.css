@@ -956,10 +956,10 @@
     @media (max-width: 768px) {
         .separator {
             background-image: url('images/timeline-mobile.jpg');
-            background-attachment: unset;
             background-size: cover;
             background-position: center center;
-
+            background-attachment: scroll;
+            height: auto;
         }
 
         .separator::before {
