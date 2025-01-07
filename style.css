@@ -365,6 +365,15 @@
         text-align: center;
     }
 
+    @media (max-width: 768px) {
+        .separator {
+            background-attachment: scroll;
+            background-image: url('images/timeline-mobile.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
     .separator::before {
         content: '';
         position: absolute;
