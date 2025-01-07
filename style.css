@@ -365,6 +365,15 @@
         text-align: center;
     }
 
+    @media (max-width: 768px) {
+        .separator {
+            background-attachment: scroll;
+            background-image: url('images/timeline-mobile.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+
     .separator::before {
         content: '';
         position: absolute;
@@ -949,15 +958,5 @@
 
         .column p {
             font-size: 1rem;
-        }
-    }
-
-
-    @media (max-width: 768px) {
-        .separator {
-            background-image: url('images/timeline-mobile.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
         }
     }
