@@ -7,11 +7,12 @@
 
     <title>Skull Edits</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
 
 <body>
-    <div class="hero">
+    <div id="hero" class="hero">
         <div class="video-background">
             <video autoplay muted loop playsinline preload="auto">
                 <source src="videos/hero-bg.mp4" type="video/mp4">
@@ -23,29 +24,32 @@
                 <h1>matters.</h1>
             </div>
             <div class="scroll-indicator">
-                <p class="text">See more</p>
-                <div class="arrow"></div>
+                <a href="#section-1">
+                    <p class="text">See more</p>
+                    <div class="arrow"></div>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="navbar">
         <div class="logo">
-            <img src="images/logo.png" alt="Logo" />
+            <a href="#hero">
+                <img src="images/logo.png" alt="Logo" />
+            </a>
         </div>
         <button class="menu-toggle" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="nav-links">
-            <a href="#">Work</a>
-            <a href="#">Resources</a>
+            <a href="#">My work</a>
             <a href="#">About me</a>
+            <a href="#">Resources</a>
             <a href="#">FAQ</a>
         </div>
     </div>
 
-
-    <section class="section-1 hidden">
+    <section id="section-1" class="section-1 hidden">
         <div class="left hidden">
             <h1>Atention is a currency</h1>
             <div class="info hidden">
@@ -66,6 +70,7 @@
         </div>
     </section>
     <br>
+
     <section class="section-2">
         <div class="left-sect-2">
             <img src="images/photo-stats.png" alt="Left Image" class="img-photo hidden">
@@ -129,13 +134,12 @@
             <div class="left-separator">
                 <h1>Tell your story through editing</h1>
                 <div class="info-separator">
-                    <a href="form.html" target="_blank">
-                        <button class="button">Read more</button>
-                    </a>
+                    <button id="showFormBtn" class="button">Let's work</button>
                 </div>
             </div>
         </div>
     </div>
+
 
     <section class="section-3 hidden">
         <div class="title hidden">
@@ -178,22 +182,34 @@
                 <p>To find out about our upcoming projects, new resources & more!
                 </p>
                 <form class="newsletter-form">
-                    <input type="email" placeholder="Your email address" required>
+                    <input type="email" placeholder="Your email address" required autocomplete="off">
                     <button type="submit">Subscribe</button>
                 </form>
             </div>
 
             <div class="footer-column contact-column">
                 <div class="social-media">
-                    <h3>Follow me!</h3>
+                    <h3>Contact</h3>
                     <div class="social-icons">
-                        <a href="https://x.com/depressEdd00" aria-label="Twitter" target="_blank"><i
-                                class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/eduardoherreracastillo/" target="_blank"
-                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/herrerac.1/" target="_blank" aria-label="Instagram"><i
-                                class="fab fa-instagram"></i></a>
-                        <!-- <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a> -->
+                        <a href="https://x.com/depressEdd00" class="tooltip" aria-label="Twitter" target="_blank"><i
+                                class="fab fa-twitter"></i>
+                            <span class="tooltip-text">My twitter</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/eduardoherreracastillo/" class="tooltip" target="_blank"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin"></i>
+                            <span class="tooltip-text">My LinkedIn</span>
+                        </a>
+
+                        <a href="https://www.instagram.com/herrerac.1/" class="tooltip" target="_blank"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i>
+                            <span class="tooltip-text">My instagram!</span>
+                        </a>
+
+                        <a href="mailto:eduardoherreracastillo01@outlook.com" class="tooltip">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span class="tooltip-text">Send me an email</span>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-info">
@@ -201,15 +217,14 @@
                         Av Santiago <br>
                         54860 CDMX
                     </address>
-                    <p>+52 55 1689 6649</p>
-                    <p><a href="mailto:eduardoherreracastillo01@outlook.com">Send me a mail!</a>
-                    </p>
+                    <!-- <p>+52 55 1689 6640</p> -->
                 </div>
             </div>
         </div>
     </footer>
     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>
 

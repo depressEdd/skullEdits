@@ -54,7 +54,6 @@ const iconObserver = new IntersectionObserver((entries) => {
   });
 });
 
-// Selecciona todos los íconos
 const iconElements = document.querySelectorAll(".icon");
 iconElements.forEach((icon) => {
   iconObserver.observe(icon);
@@ -66,5 +65,3 @@ document.querySelector(".menu-toggle").addEventListener("click", () => {
   const navLinks = document.querySelector(".nav-links");
   navLinks.classList.toggle("active");
 });
-
-
