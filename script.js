@@ -67,29 +67,35 @@ document.querySelector(".menu-toggle").addEventListener("click", () => {
 });
 
 // Modal
+const openModalBtn = document.getElementById("openModalBtn");
+const modal = document.getElementById("modal");
+const closeModalBtn = document.getElementById("closeModalBtn");
+const body = document.querySelector("body");
 
-const openModalBtn = document.getElementById('openModalBtn');
-const modal = document.getElementById('modal');
-const closeModalBtn = document.getElementById('closeModalBtn');
-const body = document.querySelector('body');
-
-
-openModalBtn.addEventListener('click', () => {
-  modal.classList.add('open'); 
-  body.classList.add('no-scroll'); 
+openModalBtn.addEventListener("click", () => {
+  modal.classList.add("open");
+  body.classList.add("no-scroll");
 });
 
-closeModalBtn.addEventListener('click', () => {
-  modal.classList.remove('open'); 
-  body.classList.remove('no-scroll'); 
-});
+const closeModal = () => {
+  modal.classList.add("closing");
+  modal.querySelector(".modal-content").classList.add("closing");
 
-window.addEventListener('click', (e) => {
+  modal.addEventListener(
+    "animationend",
+    () => {
+      modal.classList.remove("open", "closing");
+      modal.querySelector(".modal-content").classList.remove("closing");
+      body.classList.remove("no-scroll");
+    },
+    { once: true }
+  );
+};
+closeModalBtn.addEventListener("click", closeModal);
+window.addEventListener("click", (e) => {
   if (e.target === modal) {
-      modal.classList.remove('open');
-      body.classList.remove('no-scroll');
+    closeModal();
   }
 });
-
 
 

@@ -1,3 +1,45 @@
 @import url('style.css');
 
 
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #ff6600;
+}
+
+/* Contenedor principal */
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+/* Imagen */
+.about-image img {
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Texto */
+.about-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    margin: 0;
+}
