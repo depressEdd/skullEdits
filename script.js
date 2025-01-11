@@ -65,3 +65,31 @@ document.querySelector(".menu-toggle").addEventListener("click", () => {
   const navLinks = document.querySelector(".nav-links");
   navLinks.classList.toggle("active");
 });
+
+// Modal
+
+const openModalBtn = document.getElementById('openModalBtn');
+const modal = document.getElementById('modal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+const body = document.querySelector('body');
+
+
+openModalBtn.addEventListener('click', () => {
+  modal.classList.add('open'); 
+  body.classList.add('no-scroll'); 
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.remove('open'); 
+  body.classList.remove('no-scroll'); 
+});
+
+window.addEventListener('click', (e) => {
+  if (e.target === modal) {
+      modal.classList.remove('open');
+      body.classList.remove('no-scroll');
+  }
+});
+
+
+

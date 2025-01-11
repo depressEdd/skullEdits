@@ -129,16 +129,37 @@
         </div>
     </section>
 
+    <section id="modal-sec">
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span id="closeModalBtn" class="close-btn">&times;</span>
+                <h2>Contact us</h2>
+                <form>
+                    <input type="text" placeholder="Name" id="input1">
+                    <input type="email" placeholder="Email" id="input2">
+                    <input type="text" placeholder="About your project" id="input3">
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <div class="separator">
         <div class="content-wrapper hidden">
             <div class="left-separator">
                 <h1>Tell your story through editing</h1>
-                <div class="info-separator">
-                    <button id="showFormBtn" class="button">Let's work</button>
+                <div class="info-separator"><a href="#modal-sec">
+                        <button id="openModalBtn" class="button">Let's work</button>
+                    </a>
+
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
 
 
     <section class="section-3 hidden">
@@ -170,6 +191,13 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
 
     <footer class="footer">
         <div class="footer-container">
