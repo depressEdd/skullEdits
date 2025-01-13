@@ -1,0 +1,97 @@
+@import url('style.css');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Poppins;
+    color: #ffffff;
+    background-color: #CDCDCD;
+    background-image: url(images/grunge-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    background-attachment: fixed;
+}
+
+
+.container {
+    
+    width: 90%;
+    max-width: 1200px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.demo-reel {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.demo-reel h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.demo-reel video {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border: 2px solid #000;
+}
+
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card {
+    width:500px;
+    height: 300px;
+    background-color: #ffffff20;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.demo-reel h1{
+    font-size: clamp(30px, calc(10px + 4.5vw), 5vw);
+    margin: 0 0 20px 0;
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.demo-reel p{
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.5rem);
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+}

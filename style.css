@@ -933,7 +933,6 @@
         }
     }
 
-
     /* Media section-1*/
     @media (max-width: 768px) {
 
@@ -970,7 +969,6 @@
             border-radius: 15px;
         }
     }
-
 
     /* Section 2*/
     @media (max-width: 768px) {
@@ -1140,3 +1138,5 @@
             font-size: calc(2vw + 1rem);
         }
     }
+
+
