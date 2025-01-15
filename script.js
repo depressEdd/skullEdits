@@ -12,8 +12,10 @@ hiddentElements.forEach((el) => {
   observer.observe(el);
 });
 
-const counters = document.querySelectorAll(".subs");
 
+///sub counter
+
+const counters = document.querySelectorAll(".subs");
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -97,6 +99,4 @@ window.addEventListener("click", (e) => {
     closeModal();
   }
 });
-
-
 

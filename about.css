@@ -9,7 +9,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
 }
 
 * {
@@ -158,4 +158,135 @@ header h1 {
 .sec-btn a:hover {
     color: #ff6600;
     transform: scale(1.1);
+}
+
+/* Technologies section */
+#technologies {
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    ;
+    justify-content: center;
+}
+
+.animated-title {
+    font-size: clamp(30px, calc(10px + 4.5vw), 5vw);
+    margin: 0 0 20px 0;
+    font-family: "bebas-neue", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+@keyframes text-glow {
+    from {
+        text-shadow: 2px 2px 4px #000000;
+    }
+
+    to {
+        text-shadow: 0 0 10px #ff6b6b, 0 0 20px #4ecdc4;
+    }
+}
+
+.tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    animation: float 6s ease-in-out infinite;
+}
+
+.tech-item img {
+    width: 130px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.tech-item p {
+    margin-top: 10px;
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.2rem);
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    flex-grow: 1;
+}
+
+
+.tech-item:hover img {
+    transform: scale(1.1);
+}
+
+.adobe img {
+    width: 120px;
+    height: auto;
+}
+
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.tech-item:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.tech-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.tech-item:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.tech-item:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.tech-item:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.tech-item:nth-child(6) {
+    animation-delay: 1s;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-30px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
