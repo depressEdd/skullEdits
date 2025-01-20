@@ -14,7 +14,7 @@
 
     <div class="navbar">
         <div class="logo">
-            <a href="index.html">
+            <a href="#hero">
                 <img src="images/logo.png" alt="Logo" />
             </a>
         </div>
@@ -22,8 +22,10 @@
             <i class="fas fa-bars"></i>
         </button>
         <div class="nav-links">
+            <a href="index.html">Main page</a>
             <a href="work.html">My work</a>
-            <a href="resources.html">Resources</a>
+            <a href="about.html">About me</a>
+            <a href=""></a>
         </div>
     </div>
 
@@ -32,19 +34,23 @@
     </header>
 
     <main>
-        <div class="about-container hidden">
-
+        <div class="about-container hidden" id="about-container">
             <div class="about-text">
                 <h1>Eduardo Herrera</h1>
                 <h2>Full stack developer</h2>
                 <p>
-                    My name is Eduardo Herrera. I am a <strong>computer systems engineer</strong>. I have a <i>strong passion for web development and design</i>, as well as video editing. This has led me to specialize in creating <strong>effective user experiences (UI and UX)</strong>.
+                    My name is Eduardo Herrera. I am a <strong>computer systems engineer</strong>. I have a <i>strong
+                        passion for web development and design</i>, as well as video editing. This has led me to
+                    specialize in creating <strong>effective user experiences (UI and UX)</strong>.
 
                     <br>
-                    Throughout my career, I have developed skills ranging from <i>web application creation</i> to <i>visual content production</i>, combining them to have a <strong>significant impact</strong> on the messages I want to convey.
-                    
+                    Throughout my career, I have developed skills ranging from <i>web application creation</i> to
+                    <i>visual content production</i>, combining them to have a <strong>significant impact</strong> on
+                    the messages I want to convey.
+
                     <br><br>
-                    My main goal is to continue <i>growing professionally</i> in the field of <strong>programming and audiovisual content production</strong>, adding value to every project I work on.
+                    My main goal is to continue <i>growing professionally</i> in the field of <strong>programming and
+                        audiovisual content production</strong>, adding value to every project I work on.
                 </p>
 
                 <br>
@@ -100,7 +106,10 @@
                 <img src="images/icons/js1.png" alt="JavaScript Logo">
                 <p class="tech-label">JavaScript</p>
             </li>
-
+            <li class="tech-item">
+                <img src="images/icons/pythonLogo.png" alt="JavaScript Logo">
+                <p class="tech-label">Python</p>
+            </li>
             <li class="tech-item">
                 <img src="images/icons/node.png" alt="Node.js Logo">
                 <p class="tech-label">Node.js</p>
@@ -112,25 +121,61 @@
         </ul>
         <ul class="tech-list adobe">
             <li class="tech-item">
-                <img src="images/icons/premi.png" alt="Git Logo">
+                <img src="images/icons/premi.png" alt="Premiere Logo">
                 <p class="tech-label">Premiere Pro</p>
             </li>
             <li class="tech-item">
-                <img src="images/icons/after.png" alt="Git Logo">
+                <img src="images/icons/after.png" alt="After Effects Logo">
                 <p class="tech-label">After Effects</p>
             </li>
             <li class="tech-item">
-                <img src="images/icons/ps.png" alt="Git Logo">
+                <img src="images/icons/ps.png" alt="Photoshop Logo">
                 <p class="tech-label">Photoshop</p>
             </li>
 
             <li class="tech-item">
-                <img src="images/icons/ilu.png" alt="Git Logo">
+                <img src="images/icons/ilu.png" alt="Illustrator Logo">
                 <p class="tech-label">Illustrator</p>
             </li>
 
         </ul>
     </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column logo-column">
+                <img src="images/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="footer-column newsletter-column">
+                <h3>Navigation</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Main page</a></li>
+                    <li><a href="#about-container">About me</a></li>
+                    <li><a href="work.html">My work</a></li>
+                </ul>
+            </div>
+            <div class="footer-column contact-column">
+                <h3>Contact</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/depressEdd00" class="tooltip" aria-label="Twitter" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/eduardoherreracastillo/" class="tooltip" aria-label="LinkedIn"
+                        target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/herrerac.1/" class="tooltip" aria-label="Instagram"
+                        target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="mailto:eduardoherreracastillo01@outlook.com" class="tooltip" aria-label="Email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="about.js"></script>
 </body>
 
