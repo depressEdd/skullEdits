@@ -145,9 +145,6 @@
         transition: width 0.3s ease;
     }
 
-    .nav-links a:hover::after {
-        width: 100%;
-    }
 
     .menu-toggle {
         display: none;
